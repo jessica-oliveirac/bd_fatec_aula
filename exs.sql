@@ -58,7 +58,12 @@ from employees
     join locations on locations.location_id = departments.location_id
     join countries on countries.country_id = locations.country_id
     join regions on regions.region_id = countries.region_id;
---6.
+--6.Listar o nome e sobrenome dos empregados, o nome do departamento que ele trabalha, o 
+--nome do cargo que ele exerce, a cidade onde o departamento se localiza, o país onde essa 
+--cidade se encontra e a região a qual esse país pertence. Devem ser retornados os dados de 
+--todos os empregados cujo valor do salário seja maior que a metade do salário de seu gerente (supervisor). 
+
+
 --7.Listar o nome de todos os departamentos e a quantidade de empregados que ele possui.
 select 
     department_name, count(employees.employee_id)
